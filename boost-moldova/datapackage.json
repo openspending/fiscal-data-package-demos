@@ -1,0 +1,296 @@
+{
+  "name": "boost-moldova",
+  "granularity": "aggregated",
+  "homepage": "http://wbi.worldbank.org/boost/country/moldova",
+  "title": "",
+  "homepage": "",
+  "version": "0.1.0",
+  "license": "PDDL-1.0",
+  "location": "MD",
+  "fiscalPeriod": {
+    "start": "2014-01-01",
+    "end": "2014-12-31"
+  },
+  "resources": [
+    {
+      "name": "boost-moldova-2014",
+      "path": "data/boost-moldova-2014.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 69163271,
+      "schema": {
+        "fields": [
+          {
+            "name": "year",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "admin1",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "admin2 (code)",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "admin2 (label)",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "admin3 (code)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "admin3 (label)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "admin4 (code)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "admin4 (label)",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "admin5 (code)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "admin5 (label)",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "admin6 (code)",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "admin6 (label)",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "func1 (code)",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "func1 (label)",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "func2 (code)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "func2 (label)",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "econ1 (code)",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "econ1 (label)",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "econ2 (code)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "econ2 (label)",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "fin_source",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "exp_type",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "transfer",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "approved",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "adjusted",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "executed",
+            "type": "number",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ],
+  "description": "",
+  "mapping": {
+    "measures": {
+      "approved": {
+        "source": "approved",
+        "currency": "MDL",
+        "direction": "expenditure",
+        "phase": "approved"
+      },
+      "adjusted": {
+        "source": "adjusted",
+        "currency": "MDL",
+        "direction": "expenditure",
+        "phase": "adjusted"
+      },
+      "executed": {
+        "source": "executed",
+        "currency": "MDL",
+        "direction": "expenditure",
+        "phase": "executed"
+      }
+    },
+    "dimensions": {
+      "date": {
+        "dimensionType": "datetime",
+        "attributes": {
+          "year": {
+            "source": "year"
+          }
+        }
+      },
+      "functional-classification": {
+        "dimensionType": "classification",
+        "classificationType": "functional",
+        "attributes": [
+          {
+            "id": {              
+              "source": "func1 (code)"
+            },
+            "title": {
+              "source": "func1 (label)"
+            }
+          },
+          {
+            "id": {
+              "source": "func2 (code)"
+            },
+            "title": {
+              "source": "func2 (label)"
+            }
+          }
+        ]
+      },
+      "economic-classification" : {
+        "dimensionType": "classification",
+        "classificationType": "economic",
+        "attributes": [
+          {
+            "id": {
+              "source": "econ1 (code)"
+            },
+            "title": {
+              "source": "econ1 (label)"
+            }
+          },
+          {
+            "id": {
+              "source": "econ2 (code)"
+            },
+            "title": {
+              "source": "econ2 (label)"
+            }
+          }
+        ]
+      },
+      "administrative-classification" : {
+        "dimensionType": "classification",
+        "classificationType": "administrative",
+        "attributes": [
+          {
+            "title": {
+              "source": "admin1"
+            }
+          },
+          {
+            "id": {
+              "source": "admin2 (code)"
+            },
+            "title": {
+              "source": "admin2 (label)"
+            }
+          },
+          {
+            "id": {
+              "source": "admin3 (code)"
+            },
+            "title": {
+              "source": "admin3 (label)"
+            }
+          },
+          {
+            "id": {
+              "source": "admin4 (code)"
+            },
+            "title": {
+              "source": "admin4 (label)"
+            }
+          },
+          {
+            "id": {
+              "source": "admin5 (code)"
+            },
+            "title": {
+              "source": "admin5 (label)"
+            }
+          },
+          {
+            "id": {
+              "source": "admin6 (code)"
+            },
+            "title": {
+              "source": "admin6 (label)"
+            }
+          }
+        ]
+      },
+      "other": {
+        "fin_source": {
+          "source": "fin_source"
+        },
+        "exp_type": {
+          "source": "exp_type"
+        },
+        "transfer": {
+          "source": "transfer"
+        }
+      }
+    }
+  }
+}

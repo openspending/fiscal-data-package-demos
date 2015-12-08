@@ -281,15 +281,19 @@
         ]
       },
       "other": {
-        "fin_source": {
-          "source": "fin_source"
-        },
-        "exp_type": {
-          "source": "exp_type"
-        },
-        "transfer": {
-          "source": "transfer"
-        }
+        "attributes": [
+          {
+            "fin_source": {
+              "source": "fin_source"
+            },
+            "exp_type": {
+              "source": "exp_type"
+            },
+            "transfer": {
+              "source": "transfer"
+            }
+          }
+        ]
       }
     }
   }

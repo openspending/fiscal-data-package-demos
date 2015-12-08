@@ -1,0 +1,139 @@
+{
+  "countryCode": "PY",
+  "granularity": "aggregated",
+  "license": "PDDL-1.0",
+  "name": "boost-paraguay",
+  "title": "Paraguay BOOST Government Expenditure Database",
+  "fiscalPeriod": {
+    "start": "2006-01-01",
+    "end": "2013-12-31"
+  },
+    "profiles": {
+    "fiscal": "*",
+    "tabular": "*"
+  },
+  "resources": [
+    {
+      "name": "boost_paraguay_-_municipalities_expenditure_v_1.1_2006-2013_en_0",
+      "path": "data/boost_paraguay_-_municipalities_expenditure_v_1.1_2006-2013_en_0.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 9065524,
+      "schema": {
+        "fields": [
+          {
+            "name": "YEAR",
+            "type": "integer",
+            "description": "Año"
+          },
+          {
+            "name": "ADMIN1",
+            "type": "string",
+            "description": "Administrative classification: Nivel"
+          },
+          {
+            "name": "ADMIN2",
+            "type": "string",
+            "description": "Administrative classification: Entidad"
+          },
+          {
+            "name": "ECON4",
+            "type": "string",
+            "description": "Economic classification: Grupo Objeto del Gasto"
+          },
+          {
+            "name": "ECON5",
+            "type": "string",
+            "description": "Economic classification: Sub-Grupo Objeto del Gasto"
+          },
+          {
+            "name": "MODIFIED (million guaraníes)",
+            "type": "number",
+            "description": "Presupuesto Vigente"
+          },
+          {
+            "name": "COMMITTED (million guaraníes)",
+            "type": "number",
+            "description": "Ejecutado"
+          },
+          {
+            "name": "PAID (million guaraníes)",
+            "type": "number",
+            "description": "Pagado (million guaraníes)"
+          }
+        ]
+      }
+    }
+  ],
+  "mapping": {
+    "measures": {
+      "modified": {
+        "source": "MODIFIED (million guaraníes)",
+        "currency": "PYG",
+        "direction": "expenditure",
+        "phase": "adjusted",
+        "factor": 1
+      },
+      "committed": {
+        "source": "COMMITTED (million guaraníes)",
+        "currency": "PYG",
+        "direction": "expenditure",
+        "phase": "approved",
+        "factor": 1
+      },
+      "paid": {
+        "source": "PAID (million guaraníes)",
+        "currency": "PYG",
+        "direction": "expenditure",
+        "phase": "executed",
+        "factor": 1
+      }
+    },
+    "dimensions": {
+      "date": {
+        "dimensionType": "datetime",
+        "attributes": [
+          {
+            "year": {
+              "source": "YEAR"
+            }
+          }
+        ]
+      },
+      "economic-classification": {
+        "dimensionType": "classification",
+        "classificationType": "economic",
+        "attributes": [
+          {
+            "econ4": {
+              "source": "ECON4"
+            }
+          },
+          {
+            "econ5": {
+              "source": "ECON5"
+            }
+          }
+        ]
+      },
+      "administrative-classification": {
+        "dimensionType": "classification",
+        "classificationType": "administrative",
+        "attributes": [
+          {
+            "admin1": {
+              "source": "ADMIN1"
+            }
+          },
+          {
+            "admin2": {
+              "source": "ADMIN2"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "description": "",
+  "repository": "https://github.com/os-data/boost-paraguay.git"
+}

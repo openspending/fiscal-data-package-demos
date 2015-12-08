@@ -1,0 +1,435 @@
+{
+  "countryCode": "PE",
+  "granularity": "aggregated",
+  "license": "PDDL-1.0",
+  "name": "peru-boost-nacional-2012-2014-truncated",  
+  "title": "Peru BOOST",
+  "fiscalPeriod": {
+    "start": "2012-01-01",
+    "end": "2014-12-31"
+  },
+  "profiles": {
+    "fiscal": "*",
+    "tabular": "*"
+  },
+  "resources": [
+    {
+      "name": "peru-boost-nacional-2012-2014-truncated",
+      "format": "csv",
+      "path": "peru-boost-nacional-2012-2014-truncated.csv",
+      "mediatype": "text/csv",
+      "bytes": 14192107,
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "title": "Year",
+            "description": "",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Admin1",
+            "title": "Admin1",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Admin2",
+            "title": "Admin2",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Admin2",
+            "title": "Admin2",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Admin4",
+            "title": "Admin4",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Program1",
+            "title": "Program1",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Type_project1",
+            "title": "Type Project1",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Project1",
+            "title": "Project1",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Type_project2",
+            "title": "Type Project2",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Project2",
+            "title": "Project2",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Function1",
+            "title": "Function1",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Function2",
+            "title": "Function2",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Function3",
+            "title": "Function3",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Geo1",
+            "title": "Geo1",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Geo2",
+            "title": "Geo2",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Geo3",
+            "title": "Geo3",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Source_Fin2",
+            "title": "Source Fin2",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Source_FIn3",
+            "title": "Source F In3",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Econ1",
+            "title": "Econ1",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Econ2",
+            "title": "Econ2",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Econ3",
+            "title": "Econ3",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Econ4",
+            "title": "Econ4",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Econ5",
+            "title": "Econ5",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Econ6",
+            "title": "Econ6",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Approved",
+            "title": "Approved",
+            "description": "",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "Modified",
+            "title": "Modified",
+            "description": "",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "Executed",
+            "title": "Executed",
+            "description": "",
+            "type": "number",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "mapping": {
+    "measures": { 
+      "amount-approved": {
+        "source": "Approved",
+        "resource": "peru-boost-nacional-2012-2014-truncated",
+        "currency": "PEN",
+        "direction": "expenditure",
+        "phase": "approved"
+      },
+      "amount-modified": {
+        "source": "Modified",
+        "resource": "peru-boost-nacional-2012-2014-truncated",
+        "currency": "PEN",
+        "direction": "expenditure",
+        "phase": "adjusted"
+      },
+      "amount-executed": {
+        "source": "Executed",
+        "resource": "peru-boost-nacional-2012-2014-truncated",
+        "currency": "PEN",
+        "direction": "expenditure",
+        "phase": "executed"
+      }
+    },
+    "dimensions": {
+      "datetime": {
+        "dimensionType": "datetime",
+        "attributes": [
+          {
+            "Year": {
+              "source": "Year",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          }
+        ]
+      },
+      "administrative-classification": {
+        "dimensionType": "classification",
+        "classificationType": "administrative",
+        "attributes": [
+          {
+            "Admin1": {
+              "source": "Admin1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Admin2": {
+              "source": "Admin2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Admin2": {
+              "source": "Admin2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Admin4": {
+              "source": "Admin4",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          }
+        ]
+      },
+      "program-1": {
+        "dimensionType": "activity",
+        "attributes": [
+          {
+            "Program1": {
+              "source": "Program1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          }
+        ]
+      },
+      "project-1": {
+        "dimensionType": "activity",
+        "attributes": [
+          {
+            "Type_project1": {
+              "source": "Type_project1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Project1": {
+              "source": "Project1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          }
+        ]
+      },
+      "project-2": {
+        "dimensionType": "activity",
+        "attributes": [
+          {
+            "Type_project2": {
+              "source": "Type_project2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Project2": {
+              "source": "Project2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          }
+        ]
+      },
+      "functional-classification": {
+        "dimensionType": "classification",
+        "classificationType": "functional",
+        "attributes": [
+          {
+            "Function1": {
+              "source": "Function1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Function2": {
+              "source": "Function2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Function3": {
+              "source": "Function3",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          }
+        ]
+      },
+      "location": {
+        "dimensionType": "location",
+        "attributes": [
+          {
+            "Geo1": {
+              "source": "Geo1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Geo2": {
+              "source": "Geo2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Geo3": {
+              "source": "Geo3",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          }
+        ]
+      },
+      "financial-source": {
+        "attributes": [
+          {
+            "Source_Fin2": {
+              "source": "Source_Fin2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Source_FIn3": {
+              "source": "Source_FIn3",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          }
+        ]
+      },
+      "economic-classification": {
+        "dimensionType": "classification",
+        "classificationType": "economic",
+        "attributes": [
+          {
+            "Econ1": {
+              "source": "Econ1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Econ2": {
+              "source": "Econ2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Econ3": {
+              "source": "Econ3",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Econ4": {
+              "source": "Econ4",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Econ5": {
+              "source": "Econ5",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          },
+          {
+            "Econ6": {
+              "source": "Econ6",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

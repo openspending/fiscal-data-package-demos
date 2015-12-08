@@ -1,0 +1,289 @@
+{
+  "countryCode": "BR",
+  "granularity": "aggregated",
+  "license": "PDDL-1.0",
+  "name": "boost_rio_grande_do_sul_revenue",
+  "title": "Rio Grande Do Sul BOOST",
+  "fiscalPeriod": {
+    "start": "2004-01-01",
+    "end": "2013-12-31"
+  },
+  "profiles": {
+    "fiscal": "*",
+    "tabular": "*"
+  },
+  "resources": [
+    {
+      "name": "boost_rs_state_revenue_2004_2013",
+      "format": "csv",
+      "path": "data/boost-rs-state-revenue-2004-2013.csv",
+      "mediatype": "text/csv",
+      "bytes": 12234471,
+      "schema": {
+        "fields": [
+          {
+            "name": "YEAR",
+            "title": "Year",
+            "description": "",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "ADMIN1",
+            "title": "Admin1",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "ADMIN2",
+            "title": "Admin2",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "ECON1",
+            "title": "Econ1",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "ECON2",
+            "title": "Econ2",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "ECON3",
+            "title": "Econ3",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "ECON4",
+            "title": "Econ4",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "ECON5",
+            "title": "Econ5",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "ECON6",
+            "title": "Econ6",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "ECON7",
+            "title": "Econ7",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "FIN_SOURCE1",
+            "title": "Fin Source1",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "FIN_SOURCE2",
+            "title": "Fin Source2",
+            "description": "",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "APPROVED",
+            "title": "Approved",
+            "description": "",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "REVENUE",
+            "title": "Revenue",
+            "description": "",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "REGULARIZATION",
+            "title": "Regularization",
+            "description": "",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "CONVERSION",
+            "title": "Conversion",
+            "description": "",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "TRANSFER",
+            "title": "Transfer",
+            "description": "",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "BALANCE",
+            "title": "Balance",
+            "description": "",
+            "type": "number",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "mapping": {
+    "measures": {
+      "revenue": {
+        "source": "REVENUE",
+        "resource": "boost_rs_state_revenue_2004_2013",
+        "currency": "BRL",
+        "direction": "revenue"
+      },
+      "balance": {
+        "source": "BALANCE",
+        "resource": "boost_rs_state_revenue_2004_2013",
+        "currency": "BRL",
+        "direction": "revenue"
+      },
+      "approved": {
+        "source": "APPROVED",
+        "resource": "boost_rs_state_revenue_2004_2013",
+        "currency": "BRL",
+        "direction": "revenue"
+      },
+      "regularization": {
+        "source": "REGULARIZATION",
+        "resource": "boost_rs_state_revenue_2004_2013",
+        "currency": "BRL",
+        "direction": "revenue"
+      },
+      "conversion": {
+        "source": "CONVERSION",
+        "resource": "boost_rs_state_revenue_2004_2013",
+        "currency": "BRL",
+        "direction": "revenue"
+      },
+      "transfer": {
+        "source": "TRANSFER",
+        "resource": "boost_rs_state_revenue_2004_2013",
+        "currency": "BRL",
+        "direction": "revenue"
+      }
+    },
+    "dimensions": {
+      "datetime": {
+        "dimensionType": "datetime",
+        "attributes": [
+          {
+            "year": {
+              "source": "YEAR",
+              "resource": "boost_rs_state_revenue_2004_2013"
+            }
+          }
+        ]
+      },
+      "administrative-classification": {
+        "dimensionType": "classification",
+        "classificationType": "administrative",
+        "attributes": [
+          {
+            "admin1": {
+              "source": "ADMIN1",
+              "resource": "boost_rs_state_revenue_2004_2013"
+            }
+          },
+          { 
+            "admin2": {
+              "source": "ADMIN2",
+              "resource": "boost_rs_state_revenue_2004_2013"
+            }
+          }
+        ]
+      },
+      "economic-classification": {
+        "dimensionType": "classification",
+        "classificationType": "economic",
+        "attributes": [
+          {
+            "econ1": {
+              "source": "ECON1",
+              "resource": "boost_rs_state_revenue_2004_2013"
+            }
+          },
+          {
+            "econ2": {
+              "source": "ECON2",
+              "resource": "boost_rs_state_revenue_2004_2013"
+            }
+          },
+          {
+            "econ3": {
+              "source": "ECON3",
+              "resource": "boost_rs_state_revenue_2004_2013"
+            }
+          },
+          {
+            "econ4": {
+              "source": "ECON4",
+              "resource": "boost_rs_state_revenue_2004_2013"
+            }
+          },
+          {
+            "econ5": {
+              "source": "ECON5",
+              "resource": "boost_rs_state_revenue_2004_2013"
+            }
+          },
+          {
+            "econ6": {
+              "source": "ECON6",
+              "resource": "boost_rs_state_revenue_2004_2013"
+            }
+          },
+          {
+            "econ7": {
+              "source": "ECON7",
+              "resource": "boost_rs_state_revenue_2004_2013"
+            }
+          }
+        ]
+      },
+      "financial-source": {
+        "attributes": [
+          {
+            "fin_source1": {
+              "source": "FIN_SOURCE1",
+              "resource": "boost_rs_state_revenue_2004_2013"
+            }
+          },
+          {
+            "fin_source2": {
+              "source": "FIN_SOURCE2",
+              "resource": "boost_rs_state_revenue_2004_2013"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,15 +1,17 @@
 {
-  "name": "boost-moldova",
+  "countryCode": "MD",
   "granularity": "aggregated",
-  "homepage": "http://wbi.worldbank.org/boost/country/moldova",
-  "title": "",
-  "homepage": "",
-  "version": "0.1.0",
   "license": "PDDL-1.0",
-  "location": "MD",
+  "name": "boost-moldova",
+  "title": "Moldova BOOST",
+  "version": "0.1.0",
   "fiscalPeriod": {
     "start": "2014-01-01",
     "end": "2014-12-31"
+  },
+  "profiles": {
+    "fiscal": "*",
+    "tabular": "*"
   },
   "resources": [
     {
@@ -32,7 +34,7 @@
           },
           {
             "name": "admin2 (code)",
-            "type": "integer",
+            "type": "string",
             "description": ""
           },
           {
@@ -42,17 +44,17 @@
           },
           {
             "name": "admin3 (code)",
-            "type": "number",
+            "type": "string",
             "description": ""
           },
           {
             "name": "admin3 (label)",
-            "type": "number",
+            "type": "string",
             "description": ""
           },
           {
             "name": "admin4 (code)",
-            "type": "number",
+            "type": "string",
             "description": ""
           },
           {
@@ -62,7 +64,7 @@
           },
           {
             "name": "admin5 (code)",
-            "type": "number",
+            "type": "string",
             "description": ""
           },
           {
@@ -72,7 +74,7 @@
           },
           {
             "name": "admin6 (code)",
-            "type": "integer",
+            "type": "string",
             "description": ""
           },
           {
@@ -82,7 +84,7 @@
           },
           {
             "name": "func1 (code)",
-            "type": "integer",
+            "type": "string",
             "description": ""
           },
           {
@@ -92,7 +94,7 @@
           },
           {
             "name": "func2 (code)",
-            "type": "number",
+            "type": "string",
             "description": ""
           },
           {
@@ -102,7 +104,7 @@
           },
           {
             "name": "econ1 (code)",
-            "type": "integer",
+            "type": "string",
             "description": ""
           },
           {
@@ -112,7 +114,7 @@
           },
           {
             "name": "econ2 (code)",
-            "type": "number",
+            "type": "string",
             "description": ""
           },
           {
@@ -137,7 +139,7 @@
           },
           {
             "name": "approved",
-            "type": "integer",
+            "type": "number",
             "description": ""
           },
           {
@@ -179,11 +181,13 @@
     "dimensions": {
       "date": {
         "dimensionType": "datetime",
-        "attributes": {
-          "year": {
-            "source": "year"
+        "attributes": [
+          {
+            "year": {
+              "source": "year"
+            }
           }
-        }
+        ]
       },
       "functional-classification": {
         "dimensionType": "classification",
@@ -240,7 +244,7 @@
           },
           {
             "id": {
-              "source": "admin2 (code)"
+              "source": "admin1 (code)"
             },
             "title": {
               "source": "admin2 (label)"
@@ -281,6 +285,7 @@
         ]
       },
       "other": {
+        "dimensionType": "other",
         "attributes": [
           {
             "fin_source": {

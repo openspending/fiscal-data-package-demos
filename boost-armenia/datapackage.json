@@ -1,14 +1,16 @@
 {
+  "countryCode": "AM",
+  "granularity": "aggregated",
+  "license": "PDDL-1.0",
   "name": "boost-armenia",
   "title": "Armenia BOOST Government Expenditure Database",
-  "homepage": "http://wbi.worldbank.org/boost/country/armenia",
-  "version": "0.1.0",
-  "license": "PDDL-1.0",
-  "granularity": "aggregated",
-  "countryCode": "AM",
   "fiscalPeriod": {
     "start": "2006-01-01",
     "end": "2014-12-31"
+  },
+    "profiles": {
+    "fiscal": "*",
+    "tabular": "*"
   },
   "resources": [
     {
@@ -128,13 +130,15 @@
     "dimensions": {
       "date": {
         "dimensionType": "datetime",
-        "year": {
-          "attributes": {
-            "source": "year"
+        "attributes": [
+          {
+            "year": {
+              "source": "year"
+            }
           }
-        }
+        ]
       },
-      "functional-classification" : {
+      "functional-classification": {
         "dimensionType": "classification",
         "classificationType": "functional",
         "attributes": [
@@ -154,44 +158,70 @@
             }
           }
         ]
+      },
+      "economic-classification": {
+        "dimensionType": "classification",
+        "classificationType": "economic",
+        "attributes": [
+          {
+            "econ1": {
+              "source": "econ1"
+            }
+          },
+          {
+            "econ2": {
+              "source": "econ2"
+            }
+          },
+          {
+            "econ3": {
+              "source": "econ3"
+            }
+          },
+          {
+            "econ4": {
+              "source": "econ4"
+            }
+          }
+        ]
+      },
+      "administrative-classification" : {
+        "dimensionType": "classification",
+        "classificationType": "administrative",
+        "attributes": [
+          {
+            "admin2": {
+              "source": "admin2"
+            }
+          }
+        ]
+      },
+      "activity": {
+        "dimensionType": "activity",
+        "attributes": [
+          {
+            "program": {
+              "source": "program"
+            }
+          }
+        ]
+      },
+      "other": {
+        "dimensionType": "other",
+        "attributes": [
+          {
+            "exp_type": {
+              "source": "exp_type"
+            },
+            "econ_func": {
+              "source": "Econ/func"
+            },
+            "transfer": {
+              "source": "transfer"
+            }
+          }
+        ]
       }
-    },
-    "economic-classification" : {
-      "dimensionType": "classification",
-      "classificationType": "economic",
-      "attributes": [
-        {
-          "econ1": {
-            "source": "econ1"
-          }
-        },
-        {
-          "econ2": {
-            "source": "econ2"
-          }
-        },
-        {
-          "econ3": {
-            "source": "econ3"
-          }
-        },
-        {
-          "econ4": {
-            "source": "econ4"
-          }
-        }
-      ]
-    },
-    "administrative-classification" : {
-      "dimensionType": "classification",
-      "classificationType": "administrative",
-      "attributes": [
-        {
-          "admin2": {
-            "source": "admin2"
-          }
-        }
-      ]
     }
   }
 }

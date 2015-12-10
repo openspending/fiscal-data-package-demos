@@ -16,7 +16,7 @@
     {
       "name": "peru-boost-nacional-2012-2014-truncated",
       "format": "csv",
-      "path": "peru-boost-nacional-2012-2014-truncated.csv",
+      "path": "data/peru-boost-nacional-2012-2014-truncated.csv",
       "mediatype": "text/csv",
       "bytes": 14192107,
       "schema": {

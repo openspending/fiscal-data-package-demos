@@ -193,96 +193,84 @@
     "dimensions": {
       "datetime": {
         "dimensionType": "datetime",
-        "attributes": [
-          {
-            "year": {
-              "source": "YEAR",
-              "resource": "boost_rs_state_revenue_2004_2013"
-            }
+        "attributes": {
+          "year": {
+            "source": "YEAR",
+            "resource": "boost_rs_state_revenue_2004_2013"
           }
-        ]
+        },
+        "primaryKey": "year"
       },
       "administrative-classification": {
         "dimensionType": "classification",
         "classificationType": "administrative",
-        "attributes": [
-          {
-            "admin1": {
-              "source": "ADMIN1",
-              "resource": "boost_rs_state_revenue_2004_2013"
-            }
+        "attributes": {
+          "admin1": {
+            "source": "ADMIN1",
+            "resource": "boost_rs_state_revenue_2004_2013"
           },
-          { 
-            "admin2": {
-              "source": "ADMIN2",
-              "resource": "boost_rs_state_revenue_2004_2013"
-            }
+          "admin2": {
+            "source": "ADMIN2",
+            "resource": "boost_rs_state_revenue_2004_2013",
+            "parent": "admin1"
           }
-        ]
+        },
+        "primaryKey": ["admin1", "admin2"]
       },
       "economic-classification": {
         "dimensionType": "classification",
         "classificationType": "economic",
-        "attributes": [
-          {
-            "econ1": {
-              "source": "ECON1",
-              "resource": "boost_rs_state_revenue_2004_2013"
-            }
+        "attributes": {
+          "econ1": {
+            "source": "ECON1",
+            "resource": "boost_rs_state_revenue_2004_2013"
           },
-          {
-            "econ2": {
-              "source": "ECON2",
-              "resource": "boost_rs_state_revenue_2004_2013"
-            }
+          "econ2": {
+            "source": "ECON2",
+            "resource": "boost_rs_state_revenue_2004_2013",
+            "parent": "econ1"
           },
-          {
-            "econ3": {
-              "source": "ECON3",
-              "resource": "boost_rs_state_revenue_2004_2013"
-            }
+          "econ3": {
+            "source": "ECON3",
+            "resource": "boost_rs_state_revenue_2004_2013",
+            "parent": "econ2"
           },
-          {
-            "econ4": {
-              "source": "ECON4",
-              "resource": "boost_rs_state_revenue_2004_2013"
-            }
+          "econ4": {
+            "source": "ECON4",
+            "resource": "boost_rs_state_revenue_2004_2013",
+            "parent": "econ3"
           },
-          {
-            "econ5": {
-              "source": "ECON5",
-              "resource": "boost_rs_state_revenue_2004_2013"
-            }
+          "econ5": {
+            "source": "ECON5",
+            "resource": "boost_rs_state_revenue_2004_2013",
+            "parent": "econ4"
           },
-          {
-            "econ6": {
-              "source": "ECON6",
-              "resource": "boost_rs_state_revenue_2004_2013"
-            }
+          "econ6": {
+            "source": "ECON6",
+            "resource": "boost_rs_state_revenue_2004_2013",
+            "parent": "econ5"
           },
-          {
-            "econ7": {
-              "source": "ECON7",
-              "resource": "boost_rs_state_revenue_2004_2013"
-            }
+          "econ7": {
+            "source": "ECON7",
+            "resource": "boost_rs_state_revenue_2004_2013",
+            "parent": "econ6"
           }
-        ]
+        },
+        "primaryKey": ["econ1", "econ2", "econ3", "econ4", "econ5", "econ6", "econ7"]
       },
       "financial-source": {
-        "attributes": [
-          {
-            "fin_source1": {
-              "source": "FIN_SOURCE1",
-              "resource": "boost_rs_state_revenue_2004_2013"
-            }
+        "attributes": {
+          "fin_source1": {
+            "source": "FIN_SOURCE1",
+            "resource": "boost_rs_state_revenue_2004_2013"
           },
-          {
-            "fin_source2": {
-              "source": "FIN_SOURCE2",
-              "resource": "boost_rs_state_revenue_2004_2013"
-            }
+          "fin_source2": {
+            "source": "FIN_SOURCE2",
+            "resource": "boost_rs_state_revenue_2004_2013",
+            "parent": "fin_source1"
           }
-        ]
+        },
+        "primaryKey": ["fin_source1", "fin_source2"]
       }
     }
   }

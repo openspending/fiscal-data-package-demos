@@ -1,5 +1,9 @@
 {
-  "name": "peru-boost-nacional-2012-2014-truncated",
+  "countryCode": "PE",
+  "granularity": "aggregated",
+  "license": "PDDL-1.0",
+  "name": "peru-boost-nacional-2012-2014-truncated",  
+  "title": "Peru BOOST",
   "fiscalPeriod": {
     "start": "2012-01-01",
     "end": "2014-12-31"
@@ -8,9 +12,6 @@
     "fiscal": "*",
     "tabular": "*"
   },
-  "countryCode": "PE",
-  "title": "peru-boost-nacional-2012-2014-truncated",
-  "base": "data",
   "resources": [
     {
       "name": "peru-boost-nacional-2012-2014-truncated",
@@ -140,8 +141,8 @@
             "format": "default"
           },
           {
-            "name": "Source_Fin3",
-            "title": "Source Fin3",
+            "name": "Source_FIn3",
+            "title": "Source F In3",
             "description": "",
             "type": "string",
             "format": "default"
@@ -192,21 +193,21 @@
             "name": "Approved",
             "title": "Approved",
             "description": "",
-            "type": "integer",
+            "type": "number",
             "format": "default"
           },
           {
             "name": "Modified",
             "title": "Modified",
             "description": "",
-            "type": "integer",
+            "type": "number",
             "format": "default"
           },
           {
             "name": "Executed",
             "title": "Executed",
             "description": "",
-            "type": "integer",
+            "type": "number",
             "format": "default"
           }
         ]
@@ -218,185 +219,216 @@
       "amount-approved": {
         "source": "Approved",
         "resource": "peru-boost-nacional-2012-2014-truncated",
-        "currency": "PEN"
+        "currency": "PEN",
+        "direction": "expenditure",
+        "phase": "approved"
       },
       "amount-modified": {
         "source": "Modified",
         "resource": "peru-boost-nacional-2012-2014-truncated",
-        "currency": "PEN"
+        "currency": "PEN",
+        "direction": "expenditure",
+        "phase": "adjusted"
       },
       "amount-executed": {
         "source": "Executed",
         "resource": "peru-boost-nacional-2012-2014-truncated",
-        "currency": "PEN"
+        "currency": "PEN",
+        "direction": "expenditure",
+        "phase": "executed"
       }
     },
     "dimensions": {
       "datetime": {
         "dimensionType": "datetime",
-        "attributes": {
-          "year": {
-            "source": "Year",
-            "resource": "peru-boost-nacional-2012-2014-truncated"
+        "attributes": [
+          {
+            "Year": {
+              "source": "Year",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           }
-        },
-        "primaryKey": "year"
+        ]
       },
       "administrative-classification": {
         "dimensionType": "classification",
         "classificationType": "administrative",
-        "attributes": {
-          "Admin1": {
-            "source": "Admin1",
-            "resource": "peru-boost-nacional-2012-2014-truncated"
+        "attributes": [
+          {
+            "Admin1": {
+              "source": "Admin1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Admin2": {
-            "source": "Admin2",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Admin1"
+          {
+            "Admin2": {
+              "source": "Admin2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Admin3": {
-            "source": "Admin3",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Admin2"
+          {
+            "Admin2": {
+              "source": "Admin2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Admin4": {
-            "source": "Admin4",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Admin3"
+          {
+            "Admin4": {
+              "source": "Admin4",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           }
-        },
-        "primaryKey": ["Admin1","Admin2","Admin3","Admin4"]
+        ]
       },
       "program-1": {
         "dimensionType": "activity",
-        "attributes": {
-          "Program1": {
-            "source": "Program1",
-            "resource": "peru-boost-nacional-2012-2014-truncated"
+        "attributes": [
+          {
+            "Program1": {
+              "source": "Program1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           }
-        },
-        "primaryKey": "Program1"
+        ]
       },
       "project-1": {
         "dimensionType": "activity",
-        "attributes": {
-          "Type_project1": {
-            "source": "Type_project1",
-            "resource": "peru-boost-nacional-2012-2014-truncated"
+        "attributes": [
+          {
+            "Type_project1": {
+              "source": "Type_project1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Project1": {
-            "source": "Project1",
-            "resource": "peru-boost-nacional-2012-2014-truncated"
+          {
+            "Project1": {
+              "source": "Project1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           }
-        },
-        "primaryKey": "Project1"
+        ]
       },
       "project-2": {
         "dimensionType": "activity",
-        "attributes": {
-          "Type_project2": {
-            "source": "Type_project2",
-            "resource": "peru-boost-nacional-2012-2014-truncated"
+        "attributes": [
+          {
+            "Type_project2": {
+              "source": "Type_project2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Project2": {
-            "source": "Project2",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Type_project2"
+          {
+            "Project2": {
+              "source": "Project2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           }
-        },
-        "primaryKey": "Project2"
+        ]
       },
       "functional-classification": {
         "dimensionType": "classification",
         "classificationType": "functional",
-        "attributes": {
-          "Function1": {
-            "source": "Function1",
-            "resource": "peru-boost-nacional-2012-2014-truncated"
+        "attributes": [
+          {
+            "Function1": {
+              "source": "Function1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Function2": {
-            "source": "Function2",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Function1"
+          {
+            "Function2": {
+              "source": "Function2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Function3": {
-            "source": "Function3",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Function2"
+          {
+            "Function3": {
+              "source": "Function3",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           }
-        },
-        "primaryKey": ["Function1","Function2","Function3"]
+        ]
       },
       "location": {
         "dimensionType": "location",
-        "attributes": {
-          "Geo1": {
-            "source": "Geo1",
-            "resource": "peru-boost-nacional-2012-2014-truncated"
+        "attributes": [
+          {
+            "Geo1": {
+              "source": "Geo1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Geo2": {
-            "source": "Geo2",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Geo1"
+          {
+            "Geo2": {
+              "source": "Geo2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Geo3": {
-            "source": "Geo3",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Geo2"
+          {
+            "Geo3": {
+              "source": "Geo3",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           }
-        },
-        "primaryKey": ["Geo1","Geo2","Geo3"]
+        ]
       },
       "financial-source": {
-        "attributes": {
-          "Source_Fin2": {
-            "source": "Source_Fin2",
-            "resource": "peru-boost-nacional-2012-2014-truncated"
+        "attributes": [
+          {
+            "Source_Fin2": {
+              "source": "Source_Fin2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Source_Fin3": {
-            "source": "Source_Fin3",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Source_Fin2"
+          {
+            "Source_FIn3": {
+              "source": "Source_FIn3",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           }
-        },
-        "primaryKey": ["Source_Fin2","Source_Fin3"]
+        ]
       },
       "economic-classification": {
         "dimensionType": "classification",
         "classificationType": "economic",
-        "attributes": {
-          "Econ1": {
-            "source": "Econ1",
-            "resource": "peru-boost-nacional-2012-2014-truncated"
+        "attributes": [
+          {
+            "Econ1": {
+              "source": "Econ1",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Econ2": {
-            "source": "Econ2",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Econ1"
+          {
+            "Econ2": {
+              "source": "Econ2",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Econ3": {
-            "source": "Econ3",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Econ2"
+          {
+            "Econ3": {
+              "source": "Econ3",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Econ4": {
-            "source": "Econ4",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Econ3"
+          {
+            "Econ4": {
+              "source": "Econ4",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Econ5": {
-            "source": "Econ5",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Econ4"
+          {
+            "Econ5": {
+              "source": "Econ5",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           },
-          "Econ6": {
-            "source": "Econ6",
-            "resource": "peru-boost-nacional-2012-2014-truncated",
-            "parent": "Econ5"
+          {
+            "Econ6": {
+              "source": "Econ6",
+              "resource": "peru-boost-nacional-2012-2014-truncated"
+            }
           }
-        },
-        "primaryKey": ["Econ1","Econ2","Econ3","Econ4","Econ5","Econ6"]
+        ]
       }
     }
   }

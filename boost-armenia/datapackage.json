@@ -130,86 +130,97 @@
     "dimensions": {
       "date": {
         "dimensionType": "datetime",
-        "attributes": {
+        "attributes": [
+          {
             "year": {
               "source": "year"
             }
-        },
-        "primaryKey": ["year"]
+          }
+        ]
       },
       "functional-classification": {
         "dimensionType": "classification",
         "classificationType": "functional",
-        "attributes": {
-          "func1": {
-            "source": "func1"
+        "attributes": [
+          {
+            "func1": {
+              "source": "func1"
+            }
           },
-          "func2": {
-            "source": "func2",
-            "parent": "func1"
+          {
+            "func2": {
+              "source": "func2"
+            }
           },
-          "func3": {
-            "source": "func3",
-            "parent": "func2"
+          {
+            "func3": {
+              "source": "func3"
+            }
           }
-        },
-        "primaryKey": ["func1", "func2", "func3"]
+        ]
       },
       "economic-classification": {
         "dimensionType": "classification",
         "classificationType": "economic",
-        "attributes": {
+        "attributes": [
+          {
             "econ1": {
               "source": "econ1"
-            },
-            "econ2": {
-              "source": "econ2",
-              "parent": "econ1"
-            },
-            "econ3": {
-              "source": "econ3",
-              "parent": "econ2"
-            },
-            "econ4": {
-              "source": "econ4",
-              "parent": "econ3"
             }
-        },
-        "primaryKey": ["econ1", "econ2", "econ3", "econ4"]
+          },
+          {
+            "econ2": {
+              "source": "econ2"
+            }
+          },
+          {
+            "econ3": {
+              "source": "econ3"
+            }
+          },
+          {
+            "econ4": {
+              "source": "econ4"
+            }
+          }
+        ]
       },
       "administrative-classification" : {
         "dimensionType": "classification",
         "classificationType": "administrative",
-        "attributes": {
-          "admin2": {
-            "source": "admin2"
+        "attributes": [
+          {
+            "admin2": {
+              "source": "admin2"
+            }
           }
-        },
-        "primaryKey": "admin2"
+        ]
       },
       "activity": {
         "dimensionType": "activity",
-        "attributes": {
-          "program": {
-            "source": "program"
+        "attributes": [
+          {
+            "program": {
+              "source": "program"
+            }
           }
-        },
-        "primaryKey": "program"
+        ]
       },
       "other": {
         "dimensionType": "other",
-        "attributes": {
-          "exp_type": {
-            "source": "exp_type"
-          },
-          "econ_func": {
-            "source": "Econ/func"
-          },
-          "transfer": {
-            "source": "transfer"
+        "attributes": [
+          {
+            "exp_type": {
+              "source": "exp_type"
+            },
+            "econ_func": {
+              "source": "Econ/func"
+            },
+            "transfer": {
+              "source": "transfer"
+            }
           }
-        },
-        "primaryKey": ["exp_type", "econ_func", "transfer"]
+        ]
       }
     }
   }

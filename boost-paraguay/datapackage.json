@@ -8,7 +8,7 @@
     "start": "2006-01-01",
     "end": "2013-12-31"
   },
-  "profiles": {
+    "profiles": {
     "fiscal": "*",
     "tabular": "*"
   },
@@ -92,40 +92,45 @@
     "dimensions": {
       "date": {
         "dimensionType": "datetime",
-        "attributes": {
-          "year": {
-            "source": "YEAR"
+        "attributes": [
+          {
+            "year": {
+              "source": "YEAR"
+            }
           }
-        },
-        "primaryKey": "year"
+        ]
       },
       "economic-classification": {
         "dimensionType": "classification",
         "classificationType": "economic",
-        "attributes": {
-          "econ4": {
-            "source": "ECON4"
+        "attributes": [
+          {
+            "econ4": {
+              "source": "ECON4"
+            }
           },
-          "econ5": {
-            "source": "ECON5",
-            "parent": "econ4"
+          {
+            "econ5": {
+              "source": "ECON5"
+            }
           }
-        },
-        "primaryKey": ["econ4", "econ5"]
+        ]
       },
       "administrative-classification": {
         "dimensionType": "classification",
         "classificationType": "administrative",
-        "attributes": {
-          "admin1": {
-            "source": "ADMIN1"
+        "attributes": [
+          {
+            "admin1": {
+              "source": "ADMIN1"
+            }
           },
-          "admin2": {
-            "source": "ADMIN2",
-            "parent": "admin1"
+          {
+            "admin2": {
+              "source": "ADMIN2"
+            }
           }
-        },
-        "primaryKey": ["admin1", "admin2"]
+        ]
       }
     }
   },

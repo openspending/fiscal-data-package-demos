@@ -181,124 +181,121 @@
     "dimensions": {
       "date": {
         "dimensionType": "datetime",
-        "attributes": [
-          {
-            "year": {
-              "source": "year"
-            }
+        "attributes": {
+          "year": {
+            "source": "year"
           }
-        ]
+        },
+        "primaryKey": "year"
       },
       "functional-classification": {
         "dimensionType": "classification",
         "classificationType": "functional",
-        "attributes": [
-          {
-            "id": {              
-              "source": "func1 (code)"
-            },
-            "title": {
-              "source": "func1 (label)"
-            }
+        "attributes": {
+          "func1_code": {              
+            "source": "func1 (code)"
           },
-          {
-            "id": {
-              "source": "func2 (code)"
-            },
-            "title": {
-              "source": "func2 (label)"
-            }
+          "func1_label": {
+            "source": "func1 (label)",
+            "labelfor": "func1_code"
+          },
+          "func2_code": {
+            "source": "func2 (code)",
+            "parent": "func1_code"
+          },
+          "func2_label": {
+            "source": "func2 (label)",
+            "labelfor": "func2_code"
           }
-        ]
+        },
+        "primaryKey": ["func1_code", "func2_code"]
       },
       "economic-classification" : {
         "dimensionType": "classification",
         "classificationType": "economic",
-        "attributes": [
-          {
-            "id": {
-              "source": "econ1 (code)"
-            },
-            "title": {
-              "source": "econ1 (label)"
-            }
+        "attributes": {
+          "econ1_code": {
+            "source": "econ1 (code)"
           },
-          {
-            "id": {
-              "source": "econ2 (code)"
-            },
-            "title": {
-              "source": "econ2 (label)"
-            }
+          "econ1_label": {
+            "source": "econ1 (label)",
+            "labelfor": "econ1_code"
+          },
+          "econ2_code": {
+            "source": "econ2 (code)",
+            "parent": "econ1_code"
+          },
+          "econ2_label": {
+            "source": "econ2 (label)",
+            "labelfor": "econ2_code"
           }
-        ]
+        },
+        "primaryKey": ["econ1_code", "econ2_code"]
       },
       "administrative-classification" : {
         "dimensionType": "classification",
         "classificationType": "administrative",
-        "attributes": [
-          {
-            "title": {
-              "source": "admin1"
-            }
+        "attributes": {
+          "admin1": {
+            "source": "admin1"
           },
-          {
-            "id": {
-              "source": "admin2 (code)"
-            },
-            "title": {
-              "source": "admin2 (label)"
-            }
+          "admin2_code": {
+            "source": "admin2 (code)",
+            "parent": "admin1"
           },
-          {
-            "id": {
-              "source": "admin3 (code)"
-            },
-            "title": {
-              "source": "admin3 (label)"
-            }
+          "admin2_label": {
+            "source": "admin2 (label)",
+            "labelfor": "admin2_code"
           },
-          {
-            "id": {
-              "source": "admin4 (code)"
-            },
-            "title": {
-              "source": "admin4 (label)"
-            }
+          "admin3_code": {
+            "source": "admin3 (code)",
+            "parent": "admin2_code"
           },
-          {
-            "id": {
-              "source": "admin5 (code)"
-            },
-            "title": {
-              "source": "admin5 (label)"
-            }
+          "admin3_label": {
+            "source": "admin3 (label)",
+            "labelfor": "admin2_code"
           },
-          {
-            "id": {
-              "source": "admin6 (code)"
-            },
-            "title": {
-              "source": "admin6 (label)"
-            }
+          "admin4_code": {
+            "source": "admin4 (code)",
+            "parent": "admin3_code"
+          },
+          "admin4_label": {
+            "source": "admin4 (label)",
+            "labelfor": "admin2_code"
+          },
+          "admin5_code": {
+            "source": "admin5 (code)",
+            "parent": "admin4_code"
+          },
+          "admin5_label": {
+            "source": "admin5 (label)",
+            "labelfor": "admin5_code"
+          },
+          "admin6_code": {
+            "source": "admin6 (code)",
+            "parent": "admin5_code"
+          },
+          "admin6_label": {
+            "source": "admin6 (label)",
+            "labelfor": "admin6_code"
           }
-        ]
+        },
+        "primaryKey": ["admin1", "admin2_code", "admin3_code", "admin4_code", "admin5_code", "admin6_code"]
       },
       "other": {
         "dimensionType": "other",
-        "attributes": [
-          {
-            "fin_source": {
-              "source": "fin_source"
-            },
-            "exp_type": {
-              "source": "exp_type"
-            },
-            "transfer": {
-              "source": "transfer"
-            }
+        "attributes": {
+          "fin_source": {
+            "source": "fin_source"
+          },
+          "exp_type": {
+            "source": "exp_type"
+          },
+          "transfer": {
+            "source": "transfer"
           }
-        ]
+        },
+        "primaryKey": ["fin_source", "exp_type", "transfer"]
       }
     }
   }

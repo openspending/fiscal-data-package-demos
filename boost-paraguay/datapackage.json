@@ -1,7 +1,6 @@
 {
   "countryCode": "PY",
   "granularity": "aggregated",
-  "license": "PDDL-1.0",
   "name": "boost-paraguay",
   "title": "Paraguay BOOST Government Expenditure Database",
   "fiscalPeriod": {
@@ -129,6 +128,5 @@
       }
     }
   },
-  "description": "",
-  "repository": "https://github.com/os-data/boost-paraguay.git"
+  "description": ""
 }

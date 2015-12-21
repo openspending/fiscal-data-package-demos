@@ -3,7 +3,6 @@
   "title": "",
   "homepage": "",
   "version": "0.1.0",
-  "license": "PDDL-1.0",
   "resources": [
     {
       "name": "slov2014ea_html",
@@ -96,6 +95,5 @@
       }
     }
   },
-  "description": "",
-  "repository": "https://github.com/os-data/Beneficiaries-From-EAGF-and-the-EAFRD-in-Slovakia-2014.git"
+  "description": ""
 }

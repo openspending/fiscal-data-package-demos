@@ -1,7 +1,6 @@
 {
   "countryCode": "BR",
   "granularity": "aggregated",
-  "license": "PDDL-1.0",
   "name": "boost_rio_grande_do_sul_revenue",
   "title": "Rio Grande Do Sul BOOST",
   "fiscalPeriod": {

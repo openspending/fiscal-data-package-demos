@@ -1,7 +1,6 @@
 {
   "countryCode": "AM",
   "granularity": "aggregated",
-  "license": "PDDL-1.0",
   "name": "boost-armenia",
   "title": "Armenia BOOST Government Expenditure Database",
   "fiscalPeriod": {

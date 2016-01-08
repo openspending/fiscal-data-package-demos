@@ -180,11 +180,11 @@
         "dimensionType": "classification",
         "classificationType": "administrative",
         "attributes": {
-          "admin2": {
-            "source": "admin2"
+          "admin": {
+            "source": "admin"
           }
         },
-        "primaryKey": "admin2"
+        "primaryKey": "admin"
       },
       "activity": {
         "dimensionType": "activity",

@@ -1,0 +1,102 @@
+{
+  "name": "eu-funds-absorption-rate-2007-2013",
+  "title": " 2007-2013 Funds Absoption Rate",
+  "homepage": "http://open-data.europa.eu/en/data/dataset/funds-absorption-rate",
+  "countryCode": ["PL","IT","ES","RO","CZ","HU","PT","DE","FR","GR","SK","GB","HR","BG","LT","LV","EE","SI","BE","SE","FI","NL","AT","IE","CY","MT","DK","LU"],
+  "version": "0.1.0",
+  "resources": [
+    {
+      "name": "2007-2013_funds_absoption_rate",
+      "path": "data/2007-2013_Funds_Absoption_Rate.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 46301,
+      "schema": {
+        "fields": [
+          {
+            "name": "Member State",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Year",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "Fund",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Total Paid",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Advance",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Interim",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Absorption (%)",
+            "type": "number",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ],
+  "description": "EU Cohesion Policy (European Regional Development Fund + Cohesion Fund + European Social Fund) including European Territorial Cooperation.  Percentage of funds paid (including interim payments and pre-financing) compared to total available budget.  This data is refreshed every 24 hours.  Source: Infoview > Financial Management > Financial_execution_by_period_fund_country",
+  "mapping":
+  {
+    "measures":{
+      "total-paid": {
+        "source": "Total Paid",
+        "currency": "EUR"
+      },
+      "advance": {
+        "source": "Advance",
+        "currency": "EUR"
+      },
+      "interim": {
+        "source": "Interim",
+        "currency": "EUR"
+      }
+  },
+    "dimensions": {
+      "payee": {
+        "dimensionType": "entity",
+        "attributes": {
+          "member-state": {
+            "source": "Member State"
+          }
+        },
+        "primaryKey": "member-state"
+      },
+      "date": {
+        "dimensionType": "datetime",
+        "attributes": {
+          "year": {
+            "source": "Year"
+          }
+        },
+        "primaryKey": "year"
+      },
+      "fund": {
+        "dimensionType": "activity",
+        "attributes": {
+          "fund": {           
+            "source": "Year"
+          }
+        },
+        "primaryKey": "fund"
+      }
+    }
+  }
+}

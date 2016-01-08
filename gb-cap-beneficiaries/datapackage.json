@@ -1,0 +1,756 @@
+{
+  "name": "gb-cap-beneficiaries",
+  "title": "Beneficiaries of CAP payments in United Kingdom",
+  "homepage": "http://cap-payments.defra.gov.uk/Default.aspx",
+  "version": "0.1.0",
+  "countryCode": "GB",
+  "fiscalPeriod": {
+    "start": "2013-10-16",
+    "end": "2014-10-15"
+  },
+  "granularity":  "transactional",
+  "resources": [
+    {
+      "name": "2014_all_cap_search_results_data_p14",
+      "path": "data/2014_All_CAP_Search_Results_Data_P14.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 24667175,
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "BeneficiaryCode",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "BeneficiaryName_F201",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "PostcodePrefix_F202B",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "TownCity_F202C",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "OtherEAGFTotal",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "DirectEAGFTotal",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "RuralDevelopmentTotal",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Total",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "PayingAgencyLink",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Adding value to agricultural and forestry products",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Additional amounts of aid",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Agri-environment payments",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Aid for private storage",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Aid in fruit and vegetables sector",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Aid in the apiculture sector",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Animal welfare payments",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Basic services for the economy and rural population",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Business creation and development",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Conservation and upgrading of the rural heritage",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Development of new products, processes and technologies",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Diversification into non-agricultural activities",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "DoNotShow",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Early retirement",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Encouragement of tourism activities",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Export refunds",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "First afforestation of agricultural land",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "First afforestation of non-agricultural land",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "First establishment of agroforestry systems on agricultural land",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Forest-environment payments",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Holdings undergoing restructuring due to a reform of a common market organisation",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Implementing cooperation projects",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Implementing local development strategies. Competitiveness",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Implementing local development strategies. Environment/land management",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Implementing local development strategies. Quality of life/diversification",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Improvement of the economic value of forests",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Information and promotion activities",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Infrastructure related to the development and adaptation of agriculture and forestry",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Meeting standards based on Union legislation",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Modernisation of agricultural holdings",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Natura 2000 payments",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Natura 2000 payments and payments linked to Directive 2000/60/EC (WFD)",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Natural handicap payments to farmers in mountain areas",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Non-productive investments",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Other direct aids",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Participation of farmers in food quality schemes",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Payments to farmers in areas with handicaps, other than mountain areas",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Producer groups",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Promotion measures",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Provision of farm advisory and extension services in Bulgaria and Romania",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Restoring agricultural production potential damaged by natural disasters",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Restoring forestry potential and introducing prevention actions",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Running the local action group, acquiring skills and animating the territory",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "School milk scheme",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Semi-subsistence farming",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Setting up of management, relief and advisory services",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Setting up of young farmers",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Single area payment scheme",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Skills acquisition, animation and implementation of local development strategies",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Technical Assistance",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Training and information",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Use of advisory services",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Village renewal and development",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Vocational training and information actions",
+            "type": "number",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ],
+  "mapping": {
+    "measures": {
+      "OtherEAGFTotal": {
+        "source": "OtherEAGFTotal",
+        "currency": "GBP",
+        "direction": "expenditure",
+        
+        "factor": 1
+      },
+      "DirectEAGFTotal": {
+        "source": "DirectEAGFTotal",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "RuralDevelopmentTotal": {
+        "source": "RuralDevelopmentTotal",
+        "currency": "GBP",
+        "direction": "expenditure",
+        
+        "factor": 1
+      },
+      "Total": {
+        "source": "Total",
+        "currency": "GBP",
+        "direction": "expenditure",
+        
+        "factor": 1
+      },
+      "Adding value to agricultural and forestry products": {
+        "source": "Adding value to agricultural and forestry products",
+        "currency": "GBP",
+        "direction": "expenditure",
+        
+        "factor": 1
+      },
+      "Additional amounts of aid": {
+        "source": "Additional amounts of aid",
+        "currency": "GBP",
+        "direction": "expenditure",
+        
+        "factor": 1
+      },
+      "Agri-environment payments": {
+        "source": "Agri-environment payments",
+        "currency": "GBP",
+        "direction": "expenditure",
+        
+        "factor": 1
+      },
+      "Aid for private storage": {
+        "source": "Aid for private storage",
+        "currency": "GBP",
+        "direction": "expenditure",
+        
+        "factor": 1
+      },
+      "Aid in fruit and vegetables sector": {
+        "source": "Aid in fruit and vegetables sector",
+        "currency": "GBP",
+        "direction": "expenditure",
+        
+        "factor": 1
+      },
+      "Aid in the apiculture sector": {
+        "source": "Aid in the apiculture sector",
+        "currency": "GBP",
+        "direction": "expenditure",
+        
+        "factor": 1
+      },
+      "Animal welfare payments": {
+        "source": "Animal welfare payments",
+        "currency": "GBP",
+        "direction": "expenditure",
+        
+        "factor": 1
+      },
+      "Basic services for the economy and rural population": {
+        "source": "Basic services for the economy and rural population",
+        "currency": "GBP",
+        "direction": "expenditure",
+        
+        "factor": 1
+      },
+      "Business creation and development": {
+        "source": "Business creation and development",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Conservation and upgrading of the rural heritage": {
+        "source": "Conservation and upgrading of the rural heritage",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Development of new products, processes and technologies": {
+        "source": "Development of new products, processes and technologies",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Diversification into non-agricultural activities": {
+        "direction": "expenditure",
+        "source": "Diversification into non-agricultural activities",
+        "direction": "expenditure",
+        "currency": "GBP",
+        "factor": 1
+      },
+      "DoNotShow": {
+        "source": "DoNotShow",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Early retirement": {
+        "source": "Early retirement",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Encouragement of tourism activities": {
+        "source": "Encouragement of tourism activities",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Export refunds": {
+        "source": "Export refunds",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "First afforestation of agricultural land": {
+        "direction": "expenditure",
+        "source": "First afforestation of agricultural land",
+        "direction": "expenditure",
+        "currency": "GBP",
+        "factor": 1
+      },
+      "First afforestation of non-agricultural land": {
+        "direction": "expenditure",
+        "source": "First afforestation of non-agricultural land",
+        "direction": "expenditure",
+        "currency": "GBP",
+        "factor": 1
+      },
+      "First establishment of agroforestry systems on agricultural land": {
+        "direction": "expenditure",
+        "source": "First establishment of agroforestry systems on agricultural land",
+        "direction": "expenditure",
+        "currency": "GBP",
+        "factor": 1
+      },
+      "Forest-environment payments": {
+        "source": "Forest-environment payments",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Holdings undergoing restructuring due to a reform of a common market organisation": {
+        "source": "Holdings undergoing restructuring due to a reform of a common market organisation",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Implementing cooperation projects": {
+        "source": "Implementing cooperation projects",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Implementing local development strategies. Competitiveness": {
+        "source": "Implementing local development strategies. Competitiveness",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Implementing local development strategies. Environment/land management": {
+        "source": "Implementing local development strategies. Environment/land management",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Implementing local development strategies. Quality of life/diversification": {
+        "source": "Implementing local development strategies. Quality of life/diversification",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Improvement of the economic value of forests": {
+        "source": "Improvement of the economic value of forests",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Information and promotion activities": {
+        "source": "Information and promotion activities",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Infrastructure related to the development and adaptation of agriculture and forestry": {
+        "direction": "expenditure",
+        "source": "Infrastructure related to the development and adaptation of agriculture and forestry",
+        "direction": "expenditure",
+        "currency": "GBP",
+        "factor": 1
+      },
+      "Meeting standards based on Union legislation": {
+        "source": "Meeting standards based on Union legislation",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Modernisation of agricultural holdings": {
+        "direction": "expenditure",
+        "source": "Modernisation of agricultural holdings",
+        "direction": "expenditure",
+        "currency": "GBP",
+        "factor": 1
+      },
+      "Natura 2000 payments": {
+        "source": "Natura 2000 payments",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Natura 2000 payments and payments linked to Directive 2000/60/EC (WFD)": {
+        "source": "Natura 2000 payments and payments linked to Directive 2000/60/EC (WFD)",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Natural handicap payments to farmers in mountain areas": {
+        "source": "Natural handicap payments to farmers in mountain areas",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Non-productive investments": {
+        "source": "Non-productive investments",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Other direct aids": {
+        "source": "Other direct aids",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Participation of farmers in food quality schemes": {
+        "source": "Participation of farmers in food quality schemes",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Payments to farmers in areas with handicaps, other than mountain areas": {
+        "source": "Payments to farmers in areas with handicaps, other than mountain areas",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Producer groups": {
+        "source": "Producer groups",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Promotion measures": {
+        "source": "Promotion measures",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Provision of farm advisory and extension services in Bulgaria and Romania": {
+        "source": "Provision of farm advisory and extension services in Bulgaria and Romania",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Restoring agricultural production potential damaged by natural disasters": {
+        "direction": "expenditure",
+        "source": "Restoring agricultural production potential damaged by natural disasters",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Restoring forestry potential and introducing prevention actions": {
+        "source": "Restoring forestry potential and introducing prevention actions",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Running the local action group, acquiring skills and animating the territory": {
+        "source": "Running the local action group, acquiring skills and animating the territory",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "School milk scheme": {
+        "source": "School milk scheme",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Semi-subsistence farming": {
+        "source": "Semi-subsistence farming",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Setting up of management, relief and advisory services": {
+        "source": "Setting up of management, relief and advisory services",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Setting up of young farmers": {
+        "source": "Setting up of young farmers",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Single area payment scheme": {
+        "source": "Single area payment scheme",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Skills acquisition, animation and implementation of local development strategies": {
+        "source": "Skills acquisition, animation and implementation of local development strategies",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Technical Assistance": {
+        "source": "Technical Assistance",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Training and information": {
+        "source": "Training and information",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Use of advisory services": {
+        "source": "Use of advisory services",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Village renewal and development": {
+        "source": "Village renewal and development",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      },
+      "Vocational training and information actions": {
+        "source": "Vocational training and information actions",
+        "currency": "GBP",
+        "direction": "expenditure",
+        "factor": 1
+      }
+    },
+    "dimensions": {
+      "date": {
+        "attributes": {
+          "year": {
+            "source": "Year"
+          }
+        },
+        "primaryKey": "year"
+      },
+      "payee": {
+        "attributes": {
+          "id": {
+            "source": "BeneficiaryCode"
+          },
+          "title": {
+            "source": "BeneficiaryName_F201"
+          }
+        },
+        "primaryKey": "id"
+      },
+      "payer": {
+        "attributes": {
+          "id": {
+            "source": "PayingAgencyLink"
+          }
+        },
+        "primaryKey": "id"
+      },
+      "location": {
+        "attributes": {
+          "postcodeprefix": {
+            "source": "PostcodePrefix_F202B"
+          },
+          "towncity": {
+            "source": "TownCity_F202C"
+          }
+        },
+        "primaryKey": ["postcodeprefix", "towncity"]
+      }
+    }
+  },
+  "description": "Beneficiaries of CAP payments in United Kingdom"
+}

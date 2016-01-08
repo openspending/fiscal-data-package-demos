@@ -1,0 +1,150 @@
+{
+  "name": "al-treasury-spending",
+  "title": "Albania Treasury Service",
+  "granularity": "transactional",
+  "homepage": "http://spending.data.al/en/treasuryservice/list/year/2014/inst_code/1005001",
+  "description": "",
+  "countryCode": "AL",
+  "version": "0.1.0",
+  "resources": [
+    {
+      "name": "treasury",
+      "path": "data/treasury.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 13707,
+      "schema": {
+        "fields": [
+          {
+            "name": "Budget Institution",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Supplier",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Treasury Branch",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "Date registered",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "Date executed",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "Receipt No",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "Kategori Shpenzimi",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Receipt Description",
+            "type": "string",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ],
+  "mapping": {
+    "measures": {
+      "amount": {
+        "source": "Value",
+        "currency": "ALL",
+        "factor": 1,
+        "direction": "expenditure"
+      }
+    },
+    "dimensions": {
+      "date-registered": {
+        "dimensionType": "datetime",
+        "attributes": {
+          "label":     {
+            "source": "Date registered"
+          }
+        },
+        "primaryKey": "label"
+      },
+      "date-executed": {
+        "dimensionType": "datetime",
+        "attributes": {
+          "label": {
+            "source": "Date executed"
+          }
+        },
+        "primaryKey": "label"
+      },
+      "administrator": {
+        "dimensionType": "entity",
+        "attributes": {
+          "budget-institution": {
+            "source": "Budget Institution"
+          }
+        },
+        "primaryKey": "budget-institution"
+      },
+      "supplier": {
+        "dimensionType": "entity",
+        "attributes": {
+          "supplier": {
+            "source": "Supplier"
+          }
+        },
+        "primaryKey": "supplier"
+      },
+      "treasury-branch": {
+        "dimensionType": "entity",
+        "attributes": {
+          "treasury-branch": {
+            "source": "Treasury Branch"
+          }
+        },
+        "primaryKey": "treasury-branch"
+      },
+      "invoice-id": {
+        "dimensionType": "entity",
+        "attributes": {
+          "receipt-no": {
+            "source": "Receipt No"
+          }
+        },
+        "primaryKey": "receipt-no"
+      },
+      "kategori-shpenzimi": {
+        "dimensionType": "classification",
+        "attributes": {
+          "kategori-shpenzimi": {
+            "source": "Kategori Shpenzimi"
+          }
+        },
+        "primaryKey": "kategori-shpenzimi"
+      },
+      "description": {
+        "attributes": {
+          "receipt-description": {
+            "source": "Receipt Description"
+          }
+        },
+        "primaryKey": "receipt-description"
+      }
+    }
+  }
+}

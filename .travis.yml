@@ -1,0 +1,8 @@
+language: python
+python:
+  - 3.4
+sudo: false
+install:
+  - pip install datapackage_validate
+script:
+  - python -m unittest discover

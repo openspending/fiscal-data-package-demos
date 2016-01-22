@@ -1,23 +1,23 @@
 Country ID,Fund,Amount
 Poland,Cohesion Fund (€),23208000000
 Poland,Less Developed Regions (€),51163600000
-Poland,Transition Regions (€),
+Poland,Transition Regions (€),0
 Poland,More Developed Regions (€),2242400000
-Poland,Outermost and northern sparsely populated regions (€),
+Poland,Outermost and northern sparsely populated regions (€),0
 Poland,European Territorial Cooperation: Cross-Border Cooperation (€),543200000
 Poland,European Territorial Cooperation: Transnational Cooperation (€),157300000
 Poland,Youth Employment Initiative (additional allocation) (€),252400000
 Poland,Total (€),77567000000
-Italy,Cohesion Fund (€),
+Italy,Cohesion Fund (€),0
 Italy,Less Developed Regions (€),22324600000
 Italy,Transition Regions (€),1102000000
 Italy,More Developed Regions (€),7692200000
-Italy,Outermost and northern sparsely populated regions (€),
+Italy,Outermost and northern sparsely populated regions (€),0
 Italy,European Territorial Cooperation: Cross-Border Cooperation (€),890000000
 Italy,European Territorial Cooperation: Transnational Cooperation (€),246700000
 Italy,Youth Employment Initiative (additional allocation) (€),567500000
 Italy,Total (€),32823000000
-Spain,Cohesion Fund (€),
+Spain,Cohesion Fund (€),0
 Spain,Less Developed Regions (€),2040400000
 Spain,Transition Regions (€),13399500000
 Spain,More Developed Regions (€),11074400000
@@ -28,27 +28,27 @@ Spain,Youth Employment Initiative (additional allocation) (€),943500000
 Spain,Total (€),28559500000
 Romania,Cohesion Fund (€),6935000000
 Romania,Less Developed Regions (€),15058800000
-Romania,Transition Regions (€),
+Romania,Transition Regions (€),0
 Romania,More Developed Regions (€),441300000
-Romania,Outermost and northern sparsely populated regions (€),
+Romania,Outermost and northern sparsely populated regions (€),0
 Romania,European Territorial Cooperation: Cross-Border Cooperation (€),364000000
 Romania,European Territorial Cooperation: Transnational Cooperation (€),88700000
 Romania,Youth Employment Initiative (additional allocation) (€),106000000
 Romania,Total (€),22993800000
 Czech Republic,Cohesion Fund (€),6258900000
 Czech Republic,Less Developed Regions (€),15282500000
-Czech Republic,Transition Regions (€),
+Czech Republic,Transition Regions (€),0
 Czech Republic,More Developed Regions (€),88200000
-Czech Republic,Outermost and northern sparsely populated regions (€),
+Czech Republic,Outermost and northern sparsely populated regions (€),0
 Czech Republic,European Territorial Cooperation: Cross-Border Cooperation (€),296700000
 Czech Republic,European Territorial Cooperation: Transnational Cooperation (€),43000000
 Czech Republic,Youth Employment Initiative (additional allocation) (€),13600000
 Czech Republic,Total (€),21982900000
 Hungary,Cohesion Fund (€),6025400000
 Hungary,Less Developed Regions (€),15005200000
-Hungary,Transition Regions (€),
+Hungary,Transition Regions (€),0
 Hungary,More Developed Regions (€),463700000
-Hungary,Outermost and northern sparsely populated regions (€),
+Hungary,Outermost and northern sparsely populated regions (€),0
 Hungary,European Territorial Cooperation: Cross-Border Cooperation (€),320400000
 Hungary,European Territorial Cooperation: Transnational Cooperation (€),41400000
 Hungary,Youth Employment Initiative (additional allocation) (€),49800000
@@ -62,16 +62,16 @@ Portugal,European Territorial Cooperation: Cross-Border Cooperation (€),786000
 Portugal,European Territorial Cooperation: Transnational Cooperation (€),43800000
 Portugal,Youth Employment Initiative (additional allocation) (€),160800000
 Portugal,Total (€),21465000000
-Germany,Cohesion Fund (€),
-Germany,Less Developed Regions (€),
+Germany,Cohesion Fund (€),0
+Germany,Less Developed Regions (€),0
 Germany,Transition Regions (€),9771500000
 Germany,More Developed Regions (€),8498000000
-Germany,Outermost and northern sparsely populated regions (€),
+Germany,Outermost and northern sparsely populated regions (€),0
 Germany,European Territorial Cooperation: Cross-Border Cooperation (€),626700000
 Germany,European Territorial Cooperation: Transnational Cooperation (€),338700000
-Germany,Youth Employment Initiative (additional allocation) (€),
+Germany,Youth Employment Initiative (additional allocation) (€),0
 Germany,Total (€),19234900000
-France,Cohesion Fund (€),
+France,Cohesion Fund (€),0
 France,Less Developed Regions (€),3407800000
 France,Transition Regions (€),4253300000
 France,More Developed Regions (€),6348500000
@@ -84,170 +84,170 @@ Greece,Cohesion Fund (€),3250200000
 Greece,Less Developed Regions (€),7034200000
 Greece,Transition Regions (€),2306100000
 Greece,More Developed Regions (€),2528200000
-Greece,Outermost and northern sparsely populated regions (€),
+Greece,Outermost and northern sparsely populated regions (€),0
 Greece,European Territorial Cooperation: Cross-Border Cooperation (€),185300000
 Greece,European Territorial Cooperation: Transnational Cooperation (€),46400000
 Greece,Youth Employment Initiative (additional allocation) (€),171500000
 Greece,Total (€),15521900000
 Slovakia,Cohesion Fund (€),4168300000
 Slovakia,Less Developed Regions (€),9483700000
-Slovakia,Transition Regions (€),
+Slovakia,Transition Regions (€),0
 Slovakia,More Developed Regions (€),44200000
-Slovakia,Outermost and northern sparsely populated regions (€),
+Slovakia,Outermost and northern sparsely populated regions (€),0
 Slovakia,European Territorial Cooperation: Cross-Border Cooperation (€),201100000
 Slovakia,European Territorial Cooperation: Transnational Cooperation (€),22300000
 Slovakia,Youth Employment Initiative (additional allocation) (€),72200000
 Slovakia,Total (€),13991700000
-United Kingdom,Cohesion Fund (€),
+United Kingdom,Cohesion Fund (€),0
 United Kingdom,Less Developed Regions (€),2383200000
 United Kingdom,Transition Regions (€),2617400000
 United Kingdom,More Developed Regions (€),5767600000
-United Kingdom,Outermost and northern sparsely populated regions (€),
+United Kingdom,Outermost and northern sparsely populated regions (€),0
 United Kingdom,European Territorial Cooperation: Cross-Border Cooperation (€),612300000
 United Kingdom,European Territorial Cooperation: Transnational Cooperation (€),253300000
 United Kingdom,Youth Employment Initiative (additional allocation) (€),206100000
 United Kingdom,Total (€),11839900000
 Croatia,Cohesion Fund (€),2559500000
 Croatia,Less Developed Regions (€),5837500000
-Croatia,Transition Regions (€),
-Croatia,More Developed Regions (€),
-Croatia,Outermost and northern sparsely populated regions (€),
+Croatia,Transition Regions (€),0
+Croatia,More Developed Regions (€),0
+Croatia,Outermost and northern sparsely populated regions (€),0
 Croatia,European Territorial Cooperation: Cross-Border Cooperation (€),127800000
 Croatia,European Territorial Cooperation: Transnational Cooperation (€),18300000
 Croatia,Youth Employment Initiative (additional allocation) (€),66200000
 Croatia,Total (€),8609400000
 Bulgaria,Cohesion Fund (€),2278300000
 Bulgaria,Less Developed Regions (€),5089300000
-Bulgaria,Transition Regions (€),
-Bulgaria,More Developed Regions (€),
-Bulgaria,Outermost and northern sparsely populated regions (€),
+Bulgaria,Transition Regions (€),0
+Bulgaria,More Developed Regions (€),0
+Bulgaria,Outermost and northern sparsely populated regions (€),0
 Bulgaria,European Territorial Cooperation: Cross-Border Cooperation (€),134200000
 Bulgaria,European Territorial Cooperation: Transnational Cooperation (€),31500000
 Bulgaria,Youth Employment Initiative (additional allocation) (€),55200000
 Bulgaria,Total (€),7588400000
 Lithuania,Cohesion Fund (€),2048900000
 Lithuania,Less Developed Regions (€),4628700000
-Lithuania,Transition Regions (€),
-Lithuania,More Developed Regions (€),
-Lithuania,Outermost and northern sparsely populated regions (€),
+Lithuania,Transition Regions (€),0
+Lithuania,More Developed Regions (€),0
+Lithuania,Outermost and northern sparsely populated regions (€),0
 Lithuania,European Territorial Cooperation: Cross-Border Cooperation (€),99900000
 Lithuania,European Territorial Cooperation: Transnational Cooperation (€),13900000
 Lithuania,Youth Employment Initiative (additional allocation) (€),31800000
 Lithuania,Total (€),6823100000
 Latvia,Cohesion Fund (€),1349400000
 Latvia,Less Developed Regions (€),3039800000
-Latvia,Transition Regions (€),
-Latvia,More Developed Regions (€),
-Latvia,Outermost and northern sparsely populated regions (€),
+Latvia,Transition Regions (€),0
+Latvia,More Developed Regions (€),0
+Latvia,Outermost and northern sparsely populated regions (€),0
 Latvia,European Territorial Cooperation: Cross-Border Cooperation (€),84300000
 Latvia,European Territorial Cooperation: Transnational Cooperation (€),9300000
 Latvia,Youth Employment Initiative (additional allocation) (€),29000000
 Latvia,Total (€),4511800000
 Estonia,Cohesion Fund (€),1073300000
 Estonia,Less Developed Regions (€),2461200000
-Estonia,Transition Regions (€),
-Estonia,More Developed Regions (€),
-Estonia,Outermost and northern sparsely populated regions (€),
+Estonia,Transition Regions (€),0
+Estonia,More Developed Regions (€),0
+Estonia,Outermost and northern sparsely populated regions (€),0
 Estonia,European Territorial Cooperation: Cross-Border Cooperation (€),49900000
 Estonia,European Territorial Cooperation: Transnational Cooperation (€),5500000
-Estonia,Youth Employment Initiative (additional allocation) (€),
+Estonia,Youth Employment Initiative (additional allocation) (€),0
 Estonia,Total (€),3590000000
 Slovenia,Cohesion Fund (€),895400000
 Slovenia,Less Developed Regions (€),1260000000
-Slovenia,Transition Regions (€),
+Slovenia,Transition Regions (€),0
 Slovenia,More Developed Regions (€),847300000
-Slovenia,Outermost and northern sparsely populated regions (€),
+Slovenia,Outermost and northern sparsely populated regions (€),0
 Slovenia,European Territorial Cooperation: Cross-Border Cooperation (€),54500000
 Slovenia,European Territorial Cooperation: Transnational Cooperation (€),8400000
 Slovenia,Youth Employment Initiative (additional allocation) (€),9200000
 Slovenia,Total (€),3074800000
-Belgium,Cohesion Fund (€),
-Belgium,Less Developed Regions (€),
+Belgium,Cohesion Fund (€),0
+Belgium,Less Developed Regions (€),0
 Belgium,Transition Regions (€),1039700000
 Belgium,More Developed Regions (€),938600000
-Belgium,Outermost and northern sparsely populated regions (€),
+Belgium,Outermost and northern sparsely populated regions (€),0
 Belgium,European Territorial Cooperation: Cross-Border Cooperation (€),219000000
 Belgium,European Territorial Cooperation: Transnational Cooperation (€),44200000
 Belgium,Youth Employment Initiative (additional allocation) (€),42400000
 Belgium,Total (€),2283900000
-Sweden,Cohesion Fund (€),
-Sweden,Less Developed Regions (€),
-Sweden,Transition Regions (€),
+Sweden,Cohesion Fund (€),0
+Sweden,Less Developed Regions (€),0
+Sweden,Transition Regions (€),0
 Sweden,More Developed Regions (€),1512400000
 Sweden,Outermost and northern sparsely populated regions (€),206900000
 Sweden,European Territorial Cooperation: Cross-Border Cooperation (€),304200000
 Sweden,European Territorial Cooperation: Transnational Cooperation (€),38100000
 Sweden,Youth Employment Initiative (additional allocation) (€),44200000
 Sweden,Total (€),2105800000
-Finland,Cohesion Fund (€),
-Finland,Less Developed Regions (€),
-Finland,Transition Regions (€),
+Finland,Cohesion Fund (€),0
+Finland,Less Developed Regions (€),0
+Finland,Transition Regions (€),0
 Finland,More Developed Regions (€),999100000
 Finland,Outermost and northern sparsely populated regions (€),305300000
 Finland,European Territorial Cooperation: Cross-Border Cooperation (€),139400000
 Finland,European Territorial Cooperation: Transnational Cooperation (€),21900000
-Finland,Youth Employment Initiative (additional allocation) (€),
+Finland,Youth Employment Initiative (additional allocation) (€),0
 Finland,Total (€),1465800000
-Netherlands,Cohesion Fund (€),
-Netherlands,Less Developed Regions (€),
-Netherlands,Transition Regions (€),
+Netherlands,Cohesion Fund (€),0
+Netherlands,Less Developed Regions (€),0
+Netherlands,Transition Regions (€),0
 Netherlands,More Developed Regions (€),1014600000
-Netherlands,Outermost and northern sparsely populated regions (€),
+Netherlands,Outermost and northern sparsely populated regions (€),0
 Netherlands,European Territorial Cooperation: Cross-Border Cooperation (€),321800000
 Netherlands,European Territorial Cooperation: Transnational Cooperation (€),67900000
-Netherlands,Youth Employment Initiative (additional allocation) (€),
+Netherlands,Youth Employment Initiative (additional allocation) (€),0
 Netherlands,Total (€),1404300000
-Austria,Cohesion Fund (€),
-Austria,Less Developed Regions (€),
+Austria,Cohesion Fund (€),0
+Austria,Less Developed Regions (€),0
 Austria,Transition Regions (€),72300000
 Austria,More Developed Regions (€),906000000
-Austria,Outermost and northern sparsely populated regions (€),
+Austria,Outermost and northern sparsely populated regions (€),0
 Austria,European Territorial Cooperation: Cross-Border Cooperation (€),222900000
 Austria,European Territorial Cooperation: Transnational Cooperation (€),34400000
-Austria,Youth Employment Initiative (additional allocation) (€),
+Austria,Youth Employment Initiative (additional allocation) (€),0
 Austria,Total (€),1235600000
-Ireland,Cohesion Fund (€),
-Ireland,Less Developed Regions (€),
-Ireland,Transition Regions (€),
+Ireland,Cohesion Fund (€),0
+Ireland,Less Developed Regions (€),0
+Ireland,Transition Regions (€),0
 Ireland,More Developed Regions (€),951600000
-Ireland,Outermost and northern sparsely populated regions (€),
+Ireland,Outermost and northern sparsely populated regions (€),0
 Ireland,European Territorial Cooperation: Cross-Border Cooperation (€),150500000
 Ireland,European Territorial Cooperation: Transnational Cooperation (€),18300000
 Ireland,Youth Employment Initiative (additional allocation) (€),68100000
 Ireland,Total (€),1188600000
 Cyprus,Cohesion Fund (€),269500000
-Cyprus,Less Developed Regions (€),
-Cyprus,Transition Regions (€),
+Cyprus,Less Developed Regions (€),0
+Cyprus,Transition Regions (€),0
 Cyprus,More Developed Regions (€),421800000
-Cyprus,Outermost and northern sparsely populated regions (€),
+Cyprus,Outermost and northern sparsely populated regions (€),0
 Cyprus,European Territorial Cooperation: Cross-Border Cooperation (€),29500000
 Cyprus,European Territorial Cooperation: Transnational Cooperation (€),3300000
 Cyprus,Youth Employment Initiative (additional allocation) (€),11600000
 Cyprus,Total (€),735600000
 Malta,Cohesion Fund (€),217700000
-Malta,Less Developed Regions (€),
+Malta,Less Developed Regions (€),0
 Malta,Transition Regions (€),490200000
-Malta,More Developed Regions (€),
-Malta,Outermost and northern sparsely populated regions (€),
+Malta,More Developed Regions (€),0
+Malta,Outermost and northern sparsely populated regions (€),0
 Malta,European Territorial Cooperation: Cross-Border Cooperation (€),15300000
 Malta,European Territorial Cooperation: Transnational Cooperation (€),1700000
-Malta,Youth Employment Initiative (additional allocation) (€),
+Malta,Youth Employment Initiative (additional allocation) (€),0
 Malta,Total (€),725000000
-Denmark,Cohesion Fund (€),
-Denmark,Less Developed Regions (€),
+Denmark,Cohesion Fund (€),0
+Denmark,Less Developed Regions (€),0
 Denmark,Transition Regions (€),71400000
 Denmark,More Developed Regions (€),255100000
-Denmark,Outermost and northern sparsely populated regions (€),
+Denmark,Outermost and northern sparsely populated regions (€),0
 Denmark,European Territorial Cooperation: Cross-Border Cooperation (€),204200000
 Denmark,European Territorial Cooperation: Transnational Cooperation (€),22700000
-Denmark,Youth Employment Initiative (additional allocation) (€),
+Denmark,Youth Employment Initiative (additional allocation) (€),0
 Denmark,Total (€),553400000
-Luxembourg,Cohesion Fund (€),
-Luxembourg,Less Developed Regions (€),
-Luxembourg,Transition Regions (€),
+Luxembourg,Cohesion Fund (€),0
+Luxembourg,Less Developed Regions (€),0
+Luxembourg,Transition Regions (€),0
 Luxembourg,More Developed Regions (€),39600000
-Luxembourg,Outermost and northern sparsely populated regions (€),
+Luxembourg,Outermost and northern sparsely populated regions (€),0
 Luxembourg,European Territorial Cooperation: Cross-Border Cooperation (€),18200000
 Luxembourg,European Territorial Cooperation: Transnational Cooperation (€),2000000
-Luxembourg,Youth Employment Initiative (additional allocation) (€),
+Luxembourg,Youth Employment Initiative (additional allocation) (€),0
 Luxembourg,Total (€),59700000

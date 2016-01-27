@@ -1,0 +1,202 @@
+{
+  "owner": "__tests",
+  "regionCode": "eu",
+  "countryCode": "MK",
+  "name": "central-budget-of-macedonia",
+  "title": "Central Budget of Macedonia",
+  "fiscalPeriod": {
+    "start": "2014-01-01",
+    "end": "2015-01-01"
+  },
+  "resources": [
+    {
+      "name": "mfbudzetirebalansnarmmk-mk",
+      "format": "csv",
+      "path": "MFBudzetIRebalansNaRMmk-MK.csv",
+      "mediatype": "text/csv",
+      "bytes": 2574172,
+      "schema": {
+        "fields": [
+          {
+            "name": "Датум на објавување",
+            "title": "датум на објавување",
+            "description": "Date of Publishing",
+            "type": "datetime",
+            "format": "default"
+          },
+          {
+            "name": "Број раздел",
+            "title": "број раздел",
+            "description": "Number of section",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Назив раздел",
+            "title": "назив раздел",
+            "description": "Name of Section",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Сметка",
+            "title": "сметка",
+            "description": "Account number",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Број потпрограма",
+            "title": "број потпрограма",
+            "description": "Number of subprogram",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Назив потпрограма",
+            "title": "назив потпрограма",
+            "description": "Name of Subprogram",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Категорија",
+            "title": "категорија",
+            "description": "Number of Category",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Назив категорија",
+            "title": "назив категорија",
+            "description": "Name of Category",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Ставка",
+            "title": "ставка",
+            "description": "Number of Item",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Назив ставка",
+            "title": "назив ставка",
+            "description": "Name of Item",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Буџет",
+            "title": "буџет",
+            "description": "Budget",
+            "type": "number",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "mapping": {
+    "measures": {
+      "amount": {
+        "currency": "MKD",
+        "direction": "expenditure",
+        "phase": "executed",
+        "source": "Буџет",
+        "resource": "mfbudzetirebalansnarmmk-mk"
+      }
+    },
+    "dimensions": {
+      "date": {
+        "dimensionType": "datetime",
+        "primaryKey": [
+          "date"
+        ],
+        "attributes": {
+          "date": {
+            "source": "Датум на објавување",
+            "resource": "mfbudzetirebalansnarmmk-mk"
+          }
+        }
+      },
+      "section": {
+        "classificationType": "administrative",
+        "dimensionType": "classification",
+        "primaryKey": [
+          "code"
+        ],
+        "attributes": {
+          "code": {
+            "source": "Број раздел",
+            "resource": "mfbudzetirebalansnarmmk-mk"
+          },
+          "title": {
+            "source": "Назив раздел",
+            "resource": "mfbudzetirebalansnarmmk-mk",
+            "labelfor": "code"
+          }
+        }
+      },
+      "account": {
+        "dimensionType": "entity",
+        "primaryKey": [
+          "code"
+        ],
+        "attributes": {
+          "code": {
+            "source": "Сметка",
+            "resource": "mfbudzetirebalansnarmmk-mk"
+          }
+        }
+      },
+      "subprogram": {
+        "dimensionType": "activity",
+        "primaryKey": [
+          "code"
+        ],
+        "attributes": {
+          "code": {
+            "source": "Број потпрограма",
+            "resource": "mfbudzetirebalansnarmmk-mk"
+          },
+          "title": {
+            "source": "Назив потпрограма",
+            "resource": "mfbudzetirebalansnarmmk-mk",
+            "labelfor": "code"
+          }
+        }
+      },
+      "category": {
+        "dimensionType": "classification",
+        "classificationType": "functional",
+        "primaryKey": [
+          "category-code",
+          "item-code"
+        ],
+        "attributes": {
+          "category-code": {
+            "source": "Категорија",
+            "resource": "mfbudzetirebalansnarmmk-mk"
+          },
+          "category-title": {
+            "source": "Назив категорија",
+            "resource": "mfbudzetirebalansnarmmk-mk",
+            "labelfor": "category-code"
+          },
+          "item-code": {
+            "source": "Ставка",
+            "resource": "mfbudzetirebalansnarmmk-mk",
+            "parent": "category-code"
+          },
+          "item-title": {
+            "source": "Назив ставка",
+            "resource": "mfbudzetirebalansnarmmk-mk",
+            "labelfor": "item-code"
+          }
+        }
+      }
+    }
+  }
+}

@@ -187,6 +187,15 @@
         },
         "primaryKey": "year"
       },
+      "location": {
+        "dimensionType": "location",
+        "attributes": {
+          "title": {
+            "source": "admin2 (label)"
+          }
+        },
+        "primaryKey": "title"
+      },
       "functional-classification": {
         "dimensionType": "classification",
         "classificationType": "functional",
